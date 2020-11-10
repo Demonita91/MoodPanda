@@ -22,10 +22,7 @@ public class BaseTest {
     String email = "demonita27@malinator.com";
     String password = "200592";
 
-
-
     @BeforeMethod
-
     public void setUp(ITestContext context) {
         Configuration.browser = "chrome";
         Configuration.startMaximized = true;

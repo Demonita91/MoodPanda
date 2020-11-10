@@ -74,13 +74,11 @@ public class RateYourHappinessModal {
     }
 
     public void selectHours(String hours) {
-        Select select = new Select($(HOURS));
-        select.selectByVisibleText(hours);
+        new Select($(HOURS)).selectByVisibleText(hours);
     }
 
     public void selectMinutes(String minutes) {
-        Select select = new Select($(MINUTES));
-        select.selectByVisibleText(minutes);
+        new Select($(MINUTES)).selectByVisibleText(minutes);
     }
 
     public void selectTime(String hours, String minutes) {
@@ -89,13 +87,11 @@ public class RateYourHappinessModal {
     }
 
     public void selectMonth(String month) {
-        Select select = new Select($(MONTH));
-        select.selectByVisibleText(month);
+        new Select($(MONTH)).selectByVisibleText(month);
     }
 
     public void selectYear(String year) {
-        Select select = new Select($(YEAR));
-        select.selectByVisibleText(year);
+        new Select($(YEAR)).selectByVisibleText(year);
     }
 
     public void selectDay(String day) {

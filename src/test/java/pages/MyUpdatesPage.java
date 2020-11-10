@@ -10,7 +10,7 @@ import static org.testng.Assert.assertEquals;
 
 public class MyUpdatesPage {
     private static final String URL = "https://moodpanda.com/Feed/?Me=1";
-    private static final String VALUE_OF_MOOD = "[class='MoodPostItem media-content']";
+    private static final String VALUE_OF_MOOD = ".MoodPostItem.media-content";
 
 
     public MyUpdatesPage openPage() {
@@ -28,7 +28,7 @@ public class MyUpdatesPage {
     }
 
     public MyUpdatesPage checkMoodDescription(String description) {
-        $(VALUE_OF_MOOD);
+ //       $(VALUE_OF_MOOD);
         assertEquals($(VALUE_OF_MOOD).getText(), description, "Incorrect Error message");
         return this;
     }
