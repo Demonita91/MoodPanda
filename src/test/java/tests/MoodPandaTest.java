@@ -1,12 +1,13 @@
 package tests;
 
-import com.sun.org.glassfish.gmbal.Description;
+
+import io.qameta.allure.Description;
 import org.testng.annotations.Test;
 
 public class MoodPandaTest extends BaseTest {
 
     @Test
-    @Description("User update his mood with rate, description and specific date, hours, minutes")
+   @Description("User update his mood with rate, description and specific date, hours, minutes")
     public void updateMoodOlderTest() {
         loginPage
                 .openPage()
@@ -23,7 +24,7 @@ public class MoodPandaTest extends BaseTest {
     }
 
     @Test
-    @Description("User update his mood with rate, description and the date: Now")
+   @Description("User update his mood with rate, description and the date: Now")
     public void updateMoodNowTest() {
         loginPage
                 .openPage()

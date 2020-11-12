@@ -28,7 +28,6 @@ public class MyUpdatesPage {
     }
 
     public MyUpdatesPage checkMoodDescription(String description) {
- //       $(VALUE_OF_MOOD);
         assertEquals($(VALUE_OF_MOOD).getText(), description, "Incorrect Error message");
         return this;
     }

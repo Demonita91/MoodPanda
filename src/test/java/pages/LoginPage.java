@@ -1,6 +1,7 @@
 package pages;
 
 import com.codeborne.selenide.Condition;
+import lombok.extern.log4j.Log4j2;
 import org.openqa.selenium.TimeoutException;
 import org.testng.Assert;
 
@@ -8,6 +9,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 
+@Log4j2
 public class LoginPage {
     public static final String EMAIL_CSS = "#ContentPlaceHolderContent_TextBoxEmail";
     public static final String PASS_CSS = "#ContentPlaceHolderContent_TextBoxPassword";
@@ -16,6 +18,7 @@ public class LoginPage {
     public static final String GP_ICON_CSS = "[alt='MoodPanda Android App on Google Play']";
 
     public FeedPage login(String email, String password) {
+        log.info("login should be field with correct email and password");
         $(EMAIL_CSS).click();
         $(EMAIL_CSS).sendKeys(email);
         $(PASS_CSS).click();
